@@ -201,13 +201,18 @@ input::placeholder {
 
 /*  small to large  */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   /* body {
     background: #cecece;
   } */
+
+  .whole-img img {
+    position: relative;
+  }
   .details {
     position: absolute;
-    margin: 35vw 10vw;
+    top: 97%;
+    left: 4%;
   }
   .fields {
     width: 100%;
