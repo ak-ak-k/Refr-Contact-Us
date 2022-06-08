@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* header starts */
+
+.header {
+  display: grid;
+  grid-template-areas: "header header header header header header";
+  gap: 10px;
+  padding: 20px 0 20px 63px;
+  background: white;
+}
+
+.item1 {
+  grid-area: header;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+
+  text-transform: capitalize;
+
+  color: #000000;
+}
+
+/* header ends */
+
+/* main starts */
+
+.whole-img {
+  position: relative;
+}
+
+.whole-img img {
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.middle {
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.touch {
+  margin-top: 6%;
+}
+
+.touch_heading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 39px;
+  align-items: center;
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+
+.touch_secondary {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 39px;
+  align-items: center;
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+
+.details {
+  margin: 30px;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+  width: 48%;
+  margin: auto;
+}
+
+.fname input {
+  width: 271px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(30px);
+  border-radius: 8px;
+  padding: 16px;
+  text-transform: capitalize;
+  color: white;
+  outline: none;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.fname {
+  display: flex;
+  justify-content: center;
+  gap: 33px;
+}
+
+.email_number {
+  width: 573px;
+  height: 36px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(30px);
+  border-radius: 8px;
+  color: white;
+  outline: none;
+}
+
+.email_number::placeholder {
+  color: white;
+}
+.box {
+  width: 574px;
+  height: 140px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(30px);
+  border-radius: 8px;
+}
+
+.select {
+  padding: 16px;
+}
+
+.select p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+
+.items {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 32px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #000000;
+  padding: 4px 16px;
+  cursor: pointer;
+}
+
+.category {
+  display: flex;
+  padding: 0px 16px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.btn button {
+  width: 241px;
+  height: 51px;
+  cursor: pointer;
+  background: #8111e8;
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #ffffff;
+  border: none;
+}
+
+.btn button:hover {
+  background-color: #8011e8c0;
+}
+
+/*  small to large  */
+
+@media screen and (max-width: 768px) {
+  /* body {
+    background: #cecece;
+  } */
+  .details {
+    position: absolute;
+    margin: 35vw 10vw;
+  }
+  .fields {
+    width: 100%;
+    margin: 0;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .fname {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .fname input {
+    width: 80vw;
+    /* background: #ffffff; */
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px #ccc;
+    color: black;
+  }
+  input::placeholder {
+    color: black;
+  }
+  .email_number {
+    width: 80vw;
+    /* background: #ffffff; */
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px #ccc;
+    color: black;
+  }
+  .email_number::placeholder {
+    color: black;
+  }
+  .box {
+    width: 80vw;
+    height: auto;
+    /* background: #ffffff; */
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px #ccc;
+    color: black;
+  }
+  .select p {
+    color: #000000;
+    font-weight: 600;
+  }
+  .items {
+    background: #e0e0e0;
+  }
+  .category {
+    padding: 10px 16px;
+  }
+  .select {
+    padding: 10px 16px;
+  }
+  .btn {
+    width: 100%;
+  }
+  .btn button {
+    width: 100%;
+  }
+}
